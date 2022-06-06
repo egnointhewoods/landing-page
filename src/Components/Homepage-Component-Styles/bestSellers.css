@@ -1,0 +1,11 @@
+.bestSellersDiv {
+  display: flex;
+  text-align: left;
+  padding: 0px 100px;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.productList {
+  display: flex;
+  justify-content: space-between;
+}

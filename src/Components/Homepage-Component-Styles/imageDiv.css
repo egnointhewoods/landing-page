@@ -1,0 +1,27 @@
+.imageDiv {
+  background-image: url(https://cdn.shopify.com/s/files/1/0068/9206/0724/files/home-hero-new-products-desktop_04e25385-5170-455f-8bb8-a843b1384574.jpg?v=1653600627);
+  height: 100vh;
+  background-size: cover;
+  padding: 0px 100px;
+}
+.shopNowDiv {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  position: absolute;
+  bottom: 40vh;
+}
+h1 {
+  line-height: 1.125;
+  font-weight: 400;
+  letter-spacing: -0.008em;
+  font-size: 40px;
+  margin-top: 0;
+  color: white;
+  text-align: left;
+}
+button {
+  width: 50%;
+  padding: 5px 0px;
+}

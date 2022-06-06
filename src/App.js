@@ -1,10 +1,16 @@
 import "./styles.css";
-
+import Homepage from "./Components/Homepage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="*" element={<Homepage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
