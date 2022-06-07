@@ -6,6 +6,28 @@ export default function Navbarr() {
       <div className="nav">
         <input type="checkbox" id="nav-check" />
 
+        <div className="nav-links">
+          <a href="/" target="_blank" rel="noreferrer">
+            SHOP
+          </a>
+
+          <a href="/" target="_blank" rel="noreferrer">
+            INSIDE THE TIN
+          </a>
+
+          <a href="/" target="_blank" rel="noreferrer">
+            ABOUT
+          </a>
+
+          <a href="/" target="_blank" rel="noreferrer">
+            STORE LOCATOR
+          </a>
+        </div>
+
+        <div className="nav-header">
+          <div className="nav-title"></div>
+        </div>
+
         <div className="nav-btn">
           <label for="nav-check">
             <span></span>
@@ -14,19 +36,17 @@ export default function Navbarr() {
           </label>
         </div>
 
-        <div className="nav-links left">
-          <a href="//github.io/jo_geek" target="_blank" rel="noreferrer">
-            Github
+        <div className="utility-links">
+          <div className="searchBar">
+            <input className="text-input" type="text" placeholder="Search" />
+          </div>
+          <a href="/" target="_blank" rel="noreferrer">
+            LOG IN
           </a>
         </div>
-
-        <div className="nav-header">
-          <div className="nav-title">Welly</div>
-        </div>
-
-        <div className="nav-links right">
-          <a href="//github.io/jo_geek" target="_blank" rel="noreferrer">
-            Dude
+        <div className="cart">
+          <a href="/" target="_blank" rel="noreferrer">
+            CART
           </a>
         </div>
       </div>

@@ -15,26 +15,58 @@ body {
   margin: 0px;
   font-family: "segoe ui";
 }
+.utility-links {
+  display: inline;
+  font-size: 18px;
+  width: 30%;
+  position: relative;
+  left: 13%;
+  margin-top: 10px;
+}
+.utility-links > a {
+  display: inline-block;
+  padding: 13px 20px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #009a87 !important;
+}
+.searchBar {
+  display: inline;
+  color: #009a87;
+}
+.text-input {
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #009a87;
+}
 
 .nav {
-  height: 50px;
   width: 100%;
   background-color: white;
   position: fixed;
   z-index: 200;
-  padding: 0px 100px;
+  padding: 0px 20px;
   margin-top: 30px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav > .nav-header {
   display: inline;
+  position: relative;
+  top: 10px;
 }
 
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
   color: #009a87 !important;
-  padding: 10px 0px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0068/9206/0724/t/14/assets/logo.svg?v=2);
+  width: 150px;
+  background-size: cover;
+  height: 60px;
+  margin-bottom: 10px;
 }
 
 .nav > .nav-btn {
@@ -44,11 +76,25 @@ body {
 .nav > .nav-links {
   display: inline;
   font-size: 18px;
+  width: 40%;
+  margin-top: 10px;
 }
-
+.cart {
+  display: inline;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.cart > a {
+  display: inline-block;
+  padding: 13px 20px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #009a87 !important;
+}
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 13px 10px 13px 10px;
+  padding: 13px 20px;
+  font-size: 14px;
   text-decoration: none;
   color: #009a87 !important;
 }
@@ -61,12 +107,22 @@ body {
   display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1170px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
-    right: 0px;
-    top: 0px;
+    left: 0px;
+    top: 10px;
+  }
+  .utility-links {
+    display: none;
+  }
+  .cart {
+    position: absolute;
+    right: 10px;
+  }
+  .nav {
+    justify-content: center;
   }
   .nav > .nav-btn > label {
     display: inline-block;
@@ -92,7 +148,7 @@ body {
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 50px;
+    top: 60px;
     left: 0px;
     z-index: 200;
     padding-left: 30px;
