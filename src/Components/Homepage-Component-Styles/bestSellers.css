@@ -9,3 +9,7 @@
   display: flex;
   justify-content: space-between;
 }
+
+.productCard > img {
+  width: 50%;
+}
