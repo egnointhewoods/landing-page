@@ -1,13 +1,83 @@
 {
-  "items": [
+  "bestSellers": [
     {
+      "id": 1,
       "name": "EXCURSION FIRST AID KIT",
-      "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101"
+      "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
+      "price": 39.99,
+      "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
     },
-
     {
-      "name": "Dude, suh",
-      "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101"
+      "id": 2,
+      "name": "Bravery Badges Ice Cream",
+      "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/products/1071_FRONT_1720x.jpg?v=1647526295",
+      "price": 7.99,
+      "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
+    },
+    {
+      "id": 3,
+      "name": "COLORWASH BRAVERY BADGES",
+      "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/color-wash_6cb092ce-46c0-4188-bd6b-c115bb60d0d7_2000x.jpg?v=1622112578",
+      "price": 21.99,
+      "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
+    },
+    {
+      "id": 4,
+      "name": "JELLYFISH WATERPROOF",
+      "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/jellyfish_2000x.jpg?v=1622112651",
+      "price": 30.99,
+      "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
+    }
+  ],
+  "products": [
+    {
+      "id": 5,
+      "name": "Some Product",
+      "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
+      "price": 39.99,
+      "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
+    },
+    {
+      "id": 6,
+      "name": "Some Product",
+      "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
+      "price": 39.99,
+      "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
+    },
+    {
+      "id": 7,
+      "name": "Some Product",
+      "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
+      "price": 39.99,
+      "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
+    },
+    {
+      "id": 8,
+      "name": "Some Product",
+      "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
+      "price": 39.99,
+      "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
+    },
+    {
+      "id": 9,
+      "name": "Some Product",
+      "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
+      "price": 39.99,
+      "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
+    },
+    {
+      "id": 10,
+      "name": "Some Product",
+      "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
+      "price": 39.99,
+      "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
+    },
+    {
+      "id": 11,
+      "name": "Some Product",
+      "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
+      "price": 39.99,
+      "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
     }
   ]
 }
