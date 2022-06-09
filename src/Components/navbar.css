@@ -8,13 +8,36 @@
   padding: 5px 0px;
   position: fixed;
   width: 100%;
-  z-index: 200;
+  z-index: 201;
   font-size: 15px;
 }
 body {
   margin: 0px;
   font-family: "segoe ui";
 }
+.scrolledNav {
+  animation: rollUp 0.5s forwards;
+}
+.scrolledNavUp {
+  animation: rollDown 0.5s forwards;
+}
+
+@keyframes rollUp {
+  from {
+  }
+  to {
+    margin-top: -30px;
+  }
+}
+@keyframes rollDown {
+  from {
+    margin-top: -30px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
 .utility-links {
   display: inline;
   font-size: 18px;
@@ -29,6 +52,15 @@ body {
   font-size: 14px;
   text-decoration: none;
   color: #009a87 !important;
+}
+a {
+  color: #009a87;
+  font-size: 12px !important;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 0;
+  transition: color 0.25s linear;
 }
 .searchBar {
   display: inline;
@@ -91,6 +123,15 @@ body {
   font-size: 14px;
   text-decoration: none;
   color: #009a87 !important;
+}
+.cartItemNum {
+  background-color: red;
+  color: white;
+  padding: 0px 3px;
+  font-size: 11px;
+  border-radius: 50%;
+  position: relative;
+  right: 20px;
 }
 .nav > .nav-links > a {
   display: inline-block;

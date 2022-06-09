@@ -9,13 +9,15 @@ export default function BestSellers() {
   if (items) {
     return (
       <div className="bestSellersDiv">
-        <span>BEST SELLERS - </span>
+        <h3>BEST SELLERS - </h3>
         <h2>Some of our most loved products.</h2>
         <div className="productList">
-          {items.items.map((item) => {
+          {items.bestSellers.map((item) => {
             return (
               <div className="productCard" key={item.id}>
-                <h3>{item.name}</h3>
+                <img src={item.image} alt="" />
+                <h5>{item.name}</h5>
+                <button className="button">SHOP NOW</button>
               </div>
             );
           })}

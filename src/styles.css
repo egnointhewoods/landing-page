@@ -2,3 +2,28 @@ body {
   margin: 0;
   padding: 0;
 }
+.button {
+  cursor: pointer;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f68a53;
+  font-weight: 500;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 375px;
+  height: 38px;
+  padding: 0 26px;
+  line-height: 38px;
+  letter-spacing: 0.188em;
+  overflow: hidden;
+  border: 0;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  user-select: none;
+  appearance: none;
+  transition: color 0.25s linear, background-color 0.25s linear,
+    opacity 0.25s linear;
+}

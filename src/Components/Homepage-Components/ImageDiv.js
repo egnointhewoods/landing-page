@@ -4,7 +4,7 @@ export default function ImageDiv() {
     <div className="imageDiv">
       <div className="shopNowDiv">
         <h1>First Aid for all of your summer adventures</h1>
-        <button>Shop Now</button>
+        <button className="button">Shop Now</button>
       </div>
     </div>
   );

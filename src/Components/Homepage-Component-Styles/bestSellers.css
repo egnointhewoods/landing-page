@@ -8,8 +8,63 @@
 .productList {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .productCard > img {
-  width: 50%;
+  width: 100%;
+}
+h2 {
+  font-size: 48px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-style: normal;
+  font-stretch: normal;
+  color: #00665e;
+  line-height: 1.27;
+  font-weight: 400 !important;
+  margin-top: 0px;
+}
+h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0.75em;
+  font-family: Styrene A Web, sans-serif;
+  color: #00665e;
+}
+h5 {
+  font-family: Styrene A Web, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #00665e;
+}
+.productCard {
+  width: 20%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .productCard {
+    min-width: 45%;
+    margin-bottom: 40px;
+  }
+  .bestSellersDiv {
+    padding: 0px 30px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .productCard {
+    min-width: 90%;
+  }
+  .productList {
+    justify-content: center;
+  }
 }
