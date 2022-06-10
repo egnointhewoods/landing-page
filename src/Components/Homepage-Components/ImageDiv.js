@@ -1,4 +1,4 @@
-import "../Homepage-Component-Styles/imageDiv.css";
+import "../../Component-Styles/Homepage-Component-Styles/imageDiv.css";
 export default function ImageDiv() {
   return (
     <div className="imageDiv">

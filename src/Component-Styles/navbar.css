@@ -90,7 +90,7 @@ a {
   top: 10px;
 }
 
-.nav > .nav-header > .nav-title {
+.nav > .nav-header > a > .nav-title {
   display: inline-block;
   font-size: 22px;
   color: #009a87 !important;

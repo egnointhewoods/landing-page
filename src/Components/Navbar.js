@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import "./navbar.css";
+import { Link } from "react-router-dom";
+import "../Component-Styles/navbar.css";
 export default function Navbarr() {
   const [cartItemNum, setCartItemNum] = useState(0);
 
@@ -60,7 +61,9 @@ export default function Navbarr() {
         </div>
 
         <div className="nav-header">
-          <div className="nav-title"></div>
+          <a href="/">
+            <div className="nav-title"></div>{" "}
+          </a>
         </div>
 
         <div className="nav-btn">

@@ -1,28 +1,28 @@
 {
   "bestSellers": [
     {
-      "id": 1,
+      "id": "id1",
       "name": "EXCURSION FIRST AID KIT",
       "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
       "price": 39.99,
       "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
     },
     {
-      "id": 2,
+      "id": "id2",
       "name": "Bravery Badges Ice Cream",
       "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/products/1071_FRONT_1720x.jpg?v=1647526295",
       "price": 7.99,
       "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
     },
     {
-      "id": 3,
+      "id": "id3",
       "name": "COLORWASH BRAVERY BADGES",
       "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/color-wash_6cb092ce-46c0-4188-bd6b-c115bb60d0d7_2000x.jpg?v=1622112578",
       "price": 21.99,
       "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
     },
     {
-      "id": 4,
+      "id": "id4",
       "name": "JELLYFISH WATERPROOF",
       "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/jellyfish_2000x.jpg?v=1622112651",
       "price": 30.99,
@@ -31,49 +31,49 @@
   ],
   "products": [
     {
-      "id": 5,
+      "id": "id5",
       "name": "Some Product",
       "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
       "price": 39.99,
       "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
     },
     {
-      "id": 6,
+      "id": "id6",
       "name": "Some Product",
       "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
       "price": 39.99,
       "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
     },
     {
-      "id": 7,
+      "id": "id7",
       "name": "Some Product",
       "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
       "price": 39.99,
       "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
     },
     {
-      "id": 8,
+      "id": "id8",
       "name": "Some Product",
       "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
       "price": 39.99,
       "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
     },
     {
-      "id": 9,
+      "id": "id9",
       "name": "Some Product",
       "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
       "price": 39.99,
       "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
     },
     {
-      "id": 10,
+      "id": "id1"0,
       "name": "Some Product",
       "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
       "price": 39.99,
       "description": "Our Excursion First Aid Kit will never leave you stranded. This MEGA tin is the perfect complement for your life filled with fun. First house, apartment, car, RV, camper, cabin or a housewarming or college gift - we have your back, elbows, knees covered! When you're ready for anything, everything is possible."
     },
     {
-      "id": 11,
+      "id": "id1"1,
       "name": "Some Product",
       "image": "https://cdn.shopify.com/s/files/1/0068/9206/0724/files/Kits2_2000x.jpg?v=1650381101",
       "price": 39.99,
