@@ -1,0 +1,50 @@
+.cartDiv {
+  position: relative;
+  top: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 200px;
+}
+.cartedItemDiv {
+  margin-top: 40px;
+}
+.cartedItemImage {
+  max-width: 250px;
+}
+.cartedItemTitle {
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cartedItemDescription {
+  padding: 0px 20px;
+}
+.cartedItemDescription > h4 {
+  color: #0387789e;
+}
+.cartedItemDiv {
+  display: flex;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+#price {
+  margin-top: 16px;
+}
+button {
+  width: 5%;
+  padding: 0px 20px !important;
+}
+hr {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.checkOutButtonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

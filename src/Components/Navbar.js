@@ -1,16 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Component-Styles/navbar.css";
-export default function Navbarr() {
-  const [cartItemNum, setCartItemNum] = useState(0);
 
+export default function Navbarr({ cartItems }) {
   const [scrollDir, setScrollDir] = useState(null);
-
   useEffect(() => {
     const threshold = 0;
     let lastScrollY = window.pageYOffset;
     let ticking = false;
-
     const updateScrollDir = () => {
       const scrollY = window.pageYOffset;
 
@@ -61,9 +58,9 @@ export default function Navbarr() {
         </div>
 
         <div className="nav-header">
-          <a href="/">
+          <Link to="/">
             <div className="nav-title"></div>{" "}
-          </a>
+          </Link>
         </div>
 
         <div className="nav-btn">
@@ -81,8 +78,7 @@ export default function Navbarr() {
           <a href="/">LOG IN</a>
         </div>
         <div className="cart">
-          <a href="/">CART</a>{" "}
-          <span className="cartItemNum">{cartItemNum}</span>
+          <Link to="/cart">CART ({cartItems.length})</Link>{" "}
         </div>
         <div className="shopSubNav">
           <div>
