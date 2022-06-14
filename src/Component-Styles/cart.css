@@ -27,9 +27,7 @@
   justify-content: space-between;
   width: 100%;
 }
-.price {
-  width: auto;
-}
+
 .total {
   display: flex;
   justify-content: space-between;
