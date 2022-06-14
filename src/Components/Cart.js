@@ -73,7 +73,7 @@ export default function Cart({
                   </button>
                 </div>
               </div>
-              <div>
+              <div className="price">
                 $
                 {(Math.round(item.price * addItemCount * 100) / 100).toFixed(2)}{" "}
                 {/* Displays the price (only the first two decimals) */}
@@ -81,6 +81,9 @@ export default function Cart({
             </div>
           );
         })}
+        <a href="/cart" className="removeAllWrapper">
+          <button className="addToCart removeAll">Remove All</button>
+        </a>
         <hr />
         <div className="total">
           <h3>Subtotal</h3>{" "}

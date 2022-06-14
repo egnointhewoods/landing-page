@@ -48,13 +48,13 @@ export default function Navbarr({ cartItems }) {
         <input type="checkbox" id="nav-check" />
 
         <div className="nav-links">
-          <a href="/">SHOP</a>
+          <Link to="/">SHOP</Link>
 
-          <a href="/">INSIDE THE TIN</a>
+          <Link to="/">INSIDE THE TIN</Link>
 
-          <a href="/">ABOUT</a>
+          <Link to="/">ABOUT</Link>
 
-          <a href="/">STORE LOCATOR</a>
+          <Link to="/">STORE LOCATOR</Link>
         </div>
 
         <div className="nav-header">
@@ -75,17 +75,18 @@ export default function Navbarr({ cartItems }) {
           <div className="searchBar">
             <input className="text-input" type="text" placeholder="Search" />
           </div>
-          <a href="/">LOG IN</a>
+          <Link to="/">LOG IN</Link>
         </div>
         <div className="cart">
-          <Link to="/cart">CART ({cartItems.length})</Link>{" "}
+          <Link to="/cart" className="cartLink">
+            CART ({cartItems.length})
+          </Link>{" "}
         </div>
         <div className="shopSubNav">
           <div>
-            <a href="/">BANDAGES</a>
-            <a href="/">HYDROCOLLOID</a>
-            <a href="/">KITS</a>
-            <a href="/">REFILLS</a>
+            <Link to="/">BANDAGES</Link>
+            <Link to="/">KITS</Link>
+            <Link to="/">REFILLS</Link>
           </div>
         </div>
       </div>

@@ -219,3 +219,9 @@ a {
     overflow-y: auto;
   }
 }
+
+@media (max-width: 600px) {
+  .cart {
+    right: -10px;
+  }
+}
