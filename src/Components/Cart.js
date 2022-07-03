@@ -73,7 +73,7 @@ export default function Cart({
                   </button>
                 </div>
               </div>
-              <div className="price">
+              <div className="price2">
                 $
                 {(Math.round(item.price * addItemCount * 100) / 100).toFixed(2)}{" "}
                 {/* Displays the price (only the first two decimals) */}
