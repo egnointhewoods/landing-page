@@ -35,65 +35,71 @@ export default function Cart() {
     return (
       <div className="cartDiv">
         <h2>Your Shopping Carts </h2>
+
         {cart?.map((mappedCart) => {
-          return mappedCart.products.map((item) => {
-            console.log(item);
-            const fetchedItemData = items?.find((x) => x.id === item.productId);
-            console.log(fetchedItemData);
-            total = total + fetchedItemData?.price * item.quantity;
-            return (
-              <div className="cartedItemDiv" key={item.id}>
-                <img
-                  src={fetchedItemData.image}
-                  alt=""
-                  className="cartedItemImage"
-                />
-                <div className="cartedItemDescription">
-                  <h3 className="cartedItemTitle">
-                    {item.name}({item.quantity})
-                  </h3>
-                  <h4>{fetchedItemData.description}</h4>
-                  <div className="addItemDiv">
-                    <button
-                      className="plusMinus"
-                      /* onClick={() => {
+          return (
+            <div>
+              {mappedCart.products.map((item) => {
+                console.log(item);
+                const fetchedItemData = items?.find(
+                  (x) => x.id === item.productId
+                );
+                console.log(fetchedItemData);
+                total = total + fetchedItemData?.price * item.quantity;
+                return (
+                  <div className="cartedItemDiv" key={item.id}>
+                    <img
+                      src={fetchedItemData.image}
+                      alt=""
+                      className="cartedItemImage"
+                    />
+                    <div className="cartedItemDescription">
+                      <h3 className="cartedItemTitle">
+                        {item.name}({item.quantity})
+                      </h3>
+                      <h4>{fetchedItemData.description}</h4>
+                      <div className="addItemDiv">
+                        <button
+                          className="plusMinus"
+                          /* onClick={() => {
                           setAddItemCount(addItemCount - 1);
                           item.count = item.count - 1;
                         }} */
-                    >
-                      -
-                    </button>
-                    <span className="addItemCount">{item.quantity}</span>
-                    <button
-                      className="plusMinus"
-                      /* onClick={() => {
+                        >
+                          -
+                        </button>
+                        <span className="addItemCount">{item.quantity}</span>
+                        <button
+                          className="plusMinus"
+                          /* onClick={() => {
                           setAddItemCount(addItemCount + 1);
                           item.count = item.count + 1;
                         }} */
-                    >
-                      +
-                    </button>
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                    <div className="price2">
+                      ${fetchedItemData?.price * item.quantity}
+                    </div>
                   </div>
-                </div>
-                <div className="price2">
-                  ${fetchedItemData?.price * item.quantity}
-                </div>
+                );
+              })}
+              <a href="/cart" className="removeAllWrapper">
+                <button className="addToCart removeAll">Remove All</button>
+              </a>
+              <hr />
+              <div className="total">
+                <h3>Subtotal</h3> <h4 id="price">{total}</h4>
               </div>
-            );
-          });
+              <div className="checkOutButtonWrapper">
+                <button className="addToCart">Check Out</button>
+                <Link to="/">Continue Shopping</Link>
+              </div>
+            </div>
+          );
         })}
-
-        <a href="/cart" className="removeAllWrapper">
-          <button className="addToCart removeAll">Remove All</button>
-        </a>
-        <hr />
-        <div className="total">
-          <h3>Subtotal</h3> <h4 id="price">{total}</h4>
-        </div>
-        <div className="checkOutButtonWrapper">
-          <button className="addToCart">Check Out</button>
-          <Link to="/">Continue Shopping</Link>
-        </div>
       </div>
     );
 }
