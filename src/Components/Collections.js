@@ -4,7 +4,7 @@ import "../Component-Styles/collections.css";
 
 export default function BestSellers() {
   const { error, isLoading, data: items } = useFetch(
-    "https://my-json-server.typicode.com/egnointhewoods/landing-page/db"
+    "https://fakestoreapi.com/products"
   );
 
   let navigate = useNavigate();

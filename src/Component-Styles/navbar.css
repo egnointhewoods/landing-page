@@ -21,6 +21,11 @@ body {
 .scrolledNavUp {
   animation: rollDown 0.5s forwards;
 }
+.logInSpan {
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
 
 @keyframes rollUp {
   from {
@@ -44,7 +49,7 @@ body {
   width: 30%;
   position: relative;
   left: 13%;
-  margin-top: 10px;
+  margin-top: 12.5px;
 }
 .utility-links > a {
   display: inline-block;
@@ -166,8 +171,20 @@ a {
     left: 0px;
     top: 10px;
   }
-  .utility-links {
+  .searchBar {
     display: none;
+  }
+  .logInSpan {
+    position: absolute;
+    right: 0px;
+  }
+  .logInSpan > a {
+    white-space: nowrap;
+  }
+  .utility-links {
+    width: auto;
+    position: absolute;
+    left: 50px;
   }
   .cart {
     position: absolute;

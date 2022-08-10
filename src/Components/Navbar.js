@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Component-Styles/navbar.css";
+import { useContext } from "react";
+import { CartItemsContext } from "../Context/CartItemsContext";
 
 export default function Navbarr({ cartItems }) {
+  let { user, setUser } = useContext(CartItemsContext);
+
   const [scrollDir, setScrollDir] = useState(null);
   useEffect(() => {
     const threshold = 0;
@@ -75,7 +79,15 @@ export default function Navbarr({ cartItems }) {
           <div className="searchBar">
             <input className="text-input" type="text" placeholder="Search" />
           </div>
-          <Link to="/">LOG IN</Link>
+          <span className="logInSpan">
+            {user ? (
+              <Link onClick={() => setUser(null)} to="/logout">
+                LOG Out
+              </Link>
+            ) : (
+              <Link to="/login">LOG In</Link>
+            )}
+          </span>
         </div>
         <div className="cart">
           <Link to="/cart" className="cartLink">
