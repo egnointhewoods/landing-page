@@ -1,31 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Component-Styles/cart.css";
-import useFetch from "../Hooks/useFetch";
-import { useContext } from "react";
-import { CartItemsContext } from "../Context/CartItemsContext";
 
-export default function Cart() {
-  let total = 0;
-  const { user, setUser } = useContext(CartItemsContext);
-  const { error, isLoading, data: cart } = useFetch(
-    `https://fakestoreapi.com/carts/user/${user?.id}`
-  );
-  console.log(cart);
-  const { error_items, isLoading_items, data: items } = useFetch(
-    "https://fakestoreapi.com/products"
-  );
-  function decrementQuantity(userId) {
-    fetch(`https://fakestoreapi.com/carts/1`, {
-      method: "PUT",
-      body: JSON.stringify({
-        userId: { userId },
-        products: [{ productId: 1, quantity: 3 }]
-      })
-    });
-  }
+export default function Cart({
+  cartItems,
+  cartItemCount,
+  setCartItems,
+  setCartItemCount
+}) {
+  const [total, setTotal] = useState(0);
 
-  if (!user) {
+  if (cartItemCount === 0) {
     return (
       <div className="cartDiv">
         <h2>Your Shopping Cart Is Empty</h2>
@@ -34,72 +19,80 @@ export default function Cart() {
   } else
     return (
       <div className="cartDiv">
-        <h2>Your Shopping Carts </h2>
+        <h2>Your Shopping Cart </h2>
+        {cartItems.map((item) => {
+          const [disabled, setDisabled] = useState(true);
+          const [addItemCount, setAddItemCount] = useState(item.count);
 
-        {cart?.map((mappedCart) => {
+          useEffect(() => {
+            (function getTotal() {
+              let total = 0;
+              cartItems.forEach((item) => {
+                total = total + item.price * item.count;
+              });
+              setTotal(total);
+            })();
+            if (addItemCount === 1) {
+              setDisabled(true);
+            } else {
+              setDisabled(false);
+            }
+          }, [addItemCount]);
+
           return (
-            <div>
-              {mappedCart.products.map((item) => {
-                console.log(item);
-                const fetchedItemData = items?.find(
-                  (x) => x.id === item.productId
-                );
-                console.log(fetchedItemData);
-                total = total + fetchedItemData?.price * item.quantity;
-                return (
-                  <div className="cartedItemDiv" key={item.id}>
-                    <img
-                      src={fetchedItemData.image}
-                      alt=""
-                      className="cartedItemImage"
-                    />
-                    <div className="cartedItemDescription">
-                      <h3 className="cartedItemTitle">
-                        {item.name}({item.quantity})
-                      </h3>
-                      <h4>{fetchedItemData.description}</h4>
-                      <div className="addItemDiv">
-                        <button
-                          className="plusMinus"
-                          /* onClick={() => {
-                          setAddItemCount(addItemCount - 1);
-                          item.count = item.count - 1;
-                        }} */
-                        >
-                          -
-                        </button>
-                        <span className="addItemCount">{item.quantity}</span>
-                        <button
-                          className="plusMinus"
-                          /* onClick={() => {
-                          setAddItemCount(addItemCount + 1);
-                          item.count = item.count + 1;
-                        }} */
-                        >
-                          +
-                        </button>
-                      </div>
-                    </div>
-                    <div className="price2">
-                      ${fetchedItemData?.price * item.quantity}
-                    </div>
-                  </div>
-                );
-              })}
-              <a href="/cart" className="removeAllWrapper">
-                <button className="addToCart removeAll">Remove All</button>
-              </a>
-              <hr />
-              <div className="total">
-                <h3>Subtotal</h3> <h4 id="price">{total}</h4>
+            <div className="cartedItemDiv" key={item.id}>
+              <img src={item.image} alt="" className="cartedItemImage" />
+              <div className="cartedItemDescription">
+                <h3 className="cartedItemTitle">
+                  {item.name}({addItemCount})
+                </h3>
+                <h4>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Harum, error.
+                </h4>
+                <div className="addItemDiv">
+                  <button
+                    disabled={disabled}
+                    className="plusMinus"
+                    onClick={() => {
+                      setAddItemCount(addItemCount - 1);
+                      item.count = item.count - 1;
+                    }}
+                  >
+                    -
+                  </button>
+                  <span className="addItemCount">{addItemCount}</span>
+                  <button
+                    className="plusMinus"
+                    onClick={() => {
+                      setAddItemCount(addItemCount + 1);
+                      item.count = item.count + 1;
+                    }}
+                  >
+                    +
+                  </button>
+                </div>
               </div>
-              <div className="checkOutButtonWrapper">
-                <button className="addToCart">Check Out</button>
-                <Link to="/">Continue Shopping</Link>
+              <div className="price2">
+                $
+                {(Math.round(item.price * addItemCount * 100) / 100).toFixed(2)}{" "}
+                {/* Displays the price (only the first two decimals) */}
               </div>
             </div>
           );
         })}
+        <a href="/cart" className="removeAllWrapper">
+          <button className="addToCart removeAll">Remove All</button>
+        </a>
+        <hr />
+        <div className="total">
+          <h3>Subtotal</h3>{" "}
+          <h4 id="price">${(Math.round(total * 100) / 100).toFixed(2)}</h4>
+        </div>
+        <div className="checkOutButtonWrapper">
+          <button className="addToCart">Check Out</button>
+          <Link to="/">Continue Shopping</Link>
+        </div>
       </div>
     );
 }

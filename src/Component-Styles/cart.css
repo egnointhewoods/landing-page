@@ -52,8 +52,14 @@ hr {
 }
 .removeAllWrapper {
   margin-bottom: 0px !important;
-  width: 200px;
+  width: 375px;
   align-self: center;
+}
+.removeAllDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .removeAll {
   background-color: rgb(115, 115, 115);
