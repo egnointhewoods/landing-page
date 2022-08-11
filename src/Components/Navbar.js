@@ -48,13 +48,13 @@ export default function Navbarr({ cartItems }) {
         <input type="checkbox" id="nav-check" />
 
         <div className="nav-links">
-          <Link to="/">SHOP</Link>
+          <a href="/">SHOP</a>
 
-          <Link to="/">INSIDE THE TIN</Link>
+          <a href="/">INSIDE THE TIN</a>
 
-          <Link to="/">ABOUT</Link>
+          <a href="/">ABOUT</a>
 
-          <Link to="/">STORE LOCATOR</Link>
+          <a href="/">STORE LOCATOR</a>
         </div>
 
         <div className="nav-header">
