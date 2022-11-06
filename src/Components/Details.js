@@ -4,7 +4,11 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Details({ cartItems, setCartItems, setCartItemCount }) {
-  const { error, isLoading, data: items } = useFetch(
+  const {
+    error,
+    isLoading,
+    data: items,
+  } = useFetch(
     "https://my-json-server.typicode.com/egnointhewoods/landing-page/db"
   );
   let navigate = useNavigate();
